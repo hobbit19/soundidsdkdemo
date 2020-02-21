@@ -42,9 +42,9 @@
             }
             else
             {
-                memcpy(samples, data + self->offset,
+                memcpy(samples, data + self->offset * 2,
                        remaining * sizeof(float) * 2);
-                self->offset += remaining * 2;
+                self->offset += remaining;
                 remaining = 0;
             }
 
